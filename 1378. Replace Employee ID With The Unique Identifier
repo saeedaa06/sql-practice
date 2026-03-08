@@ -1,0 +1,8 @@
+-- LeetCode 1378
+-- Replace Employee ID With The Unique Identifier
+-- https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/
+
+SELECT e.name , u.unique_id
+FROM Employees e
+LEFT JOIN EmployeeUNI u
+on e.id=u.id;
